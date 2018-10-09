@@ -12,7 +12,7 @@ win32wnet.WNetCancelConnection2("\\\\SERVER\\SHAREFOLDER", 0, 0)
 
 import win32netcon, win32wnet
 import shutil
-username="USERNAME"
+  username="USERNAME"
 password="PASSWORD"
 win32wnet.WNetAddConnection2(0, None, "\\\\SERVER\\SHAREFOLDER", None, username, password)
 shutil.copy("C:\\Users\\Sandeep\\testing.txt", "\\\\SERVER\\SHAREFOLDER")
